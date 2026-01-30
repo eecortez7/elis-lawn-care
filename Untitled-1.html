@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eli’s Lawn Care</title>
+  <meta name="description" content="Reliable lawn care & landscaping. Serving your area with weekly and bi-weekly maintenance, cleanups, and more." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">Eli’s Lawn Care</div>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="btn">Call / Text</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Clean, Reliable Lawn Care</h1>
+      <p>Weekly & bi-weekly maintenance, cleanups, trimming, and more. Fast quotes and friendly service.</p>
+      <div class="hero-actions">
+        <a class="btn big" href="tel:+19561234567">Call: (956) 123-4567</a>
+        <a class="btn outline big" href="#contact">Get a Quote</a>
+      </div>
+      <p class="small">Open Mon–Sat • Free estimates (or add your policy)</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Lawn Mowing</h3>
+          <p>Mow, edge, and blow for a clean finish.</p>
+        </div>
+        <div class="card">
+          <h3>Trimming</h3>
+          <p>Bush and small tree trimming + hauling.</p>
+        </div>
+        <div class="card">
+          <h3>Leaf Cleanup</h3>
+          <p>Leaf removal and seasonal cleanups.</p>
+        </div>
+        <div class="card">
+          <h3>Mulch & Beds</h3>
+          <p>Flowerbed cleanup, weeding, mulch install.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section alt">
+      <h2>Simple Pricing</h2>
+      <p class="sub">Prices depend on yard size and overgrowth. Here’s a clear starting point:</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Weekly</h3>
+          <p class="price">$45–$65</p>
+          <ul>
+            <li>Mow + edge + blow</li>
+            <li>Best for keeping it clean</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Bi-weekly</h3>
+          <p class="price">$55–$85</p>
+          <ul>
+            <li>Mow + edge + blow</li>
+            <li>Good for lower growth</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Overgrown / One-time</h3>
+          <p class="price">Custom Quote</p>
+          <ul>
+            <li>Thick grass / heavy weeds</li>
+            <li>Cleanup + bagging if needed</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Add-ons</h3>
+          <p class="price">From $35</p>
+          <ul>
+            <li>Bush trimming</li>
+            <li>Leaf hauling</li>
+            <li>Weeding / beds</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>Before & After</h2>
+      <p class="sub">Replace these with your real photos later.</p>
+      <div class="gallery">
+        <div class="ph">Photo 1</div>
+        <div class="ph">Photo 2</div>
+        <div class="ph">Photo 3</div>
+        <div class="ph">Photo 4</div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <h2>Get a Quote</h2>
+      <p class="sub">Text me your address + a couple pictures of the yard for a quick quote.</p>
+
+      <div class="contact-box">
+        <div>
+          <h3>Call / Text</h3>
+          <p class="bigtext"><a href="tel:+19561234567">(956) 123-4567</a></p>
+          <p>Email: <a href="mailto:elisservice@email.com">elisservice@email.com</a></p>
+          <p>Service Area: McAllen / Edinburg / Pharr (edit this)</p>
+        </div>
+
+        <form class="form" onsubmit="event.preventDefault(); alert('This form is just a template. Use the Call/Text button for now.');">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            Phone
+            <input type="tel" placeholder="(956) 000-0000" required />
+          </label>
+          <label>
+            Message
+            <textarea placeholder="Address + what you need (mow, cleanup, trimming)"></textarea>
+          </label>
+          <button class="btn big" type="submit">Request Quote</button>
+          <p class="small">Tip: easiest is call/text — forms require setup.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Eli’s Lawn Care. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
